@@ -6,17 +6,11 @@
  * let arr = [{ name: "north", age: 2 }, { age: 4 }, { age: 3 }];
    Sum(arr)("age");
  */
-
+import CreateClause from './createClause';
 const Sum = array => clause => {
     let sumValue = 0,
         len = array.length,
-        _clause;
-    if (!clause)
-        _clause = c => c;
-    else if (typeof clause === "string")
-        _clause = c => c[clause];
-    else if (typeof clause === "function")
-        _clause = clause;
+        _clause = CreateClause(clause);
 
     for (let i = 0; i < len; i++) {
         let t = +_clause(array[i]);
