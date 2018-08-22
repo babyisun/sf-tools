@@ -1,4 +1,4 @@
-import { Max } from '../../';
+import { Max } from '../../src';
 
 it('数组整数取最大', () => {
     let a = [3, 4, 5];

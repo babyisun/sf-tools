@@ -1,4 +1,4 @@
-import { Cookie } from '../';
+import { Cookie } from '../src';
 
 it('写入并读取cookie', () => {
     Cookie.set("test", "abc");

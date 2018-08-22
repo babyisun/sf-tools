@@ -1,40 +1,36 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 /**
  * Cookie 操作 North Shi
  */
 
-var Cookie = {
-    get: function get(name) {
-        var cookieValue = "";
-        var search = name + "=";
+const Cookie = {
+    get(name) {
+        let cookieValue = "";
+        let search = name + "=";
         if (document.cookie.length > 0) {
-            var offset = document.cookie.indexOf(search),
-                end = void 0;
+            let offset = document.cookie.indexOf(search),
+                end;
             if (offset != -1) {
                 offset += search.length;
                 end = document.cookie.indexOf(";", offset);
-                if (end == -1) end = document.cookie.length;
+                if (end == -1)
+                    end = document.cookie.length;
                 cookieValue = unescape(document.cookie.substring(offset, end));
             }
         }
         return cookieValue;
     },
-    set: function set(name, value, time, timetype, domain) {
-        var expire = "",
+    set(name, value, time, timetype, domain) {
+        let expire = "",
             dm = "",
             timet = {
-            day: 86400000,
-            hour: 3600000,
-            minute: 60000,
-            seconds: 1000
-        };
+                day: 86400000,
+                hour: 3600000,
+                minute: 60000,
+                seconds: 1000
+            };
         if (time) {
             if (!timetype) timetype = "hour";
-            expire = new Date(new Date().getTime() + time * timet[timetype]);
+            expire = new Date((new Date()).getTime() + time * timet[timetype]);
             expire = "; expires=" + expire.toGMTString();
         }
         if (domain) {
@@ -42,9 +38,9 @@ var Cookie = {
         }
         document.cookie = name + "=" + escape(value) + expire + ";path=/" + dm;
     },
-    remove: function remove(name) {
+    remove(name) {
         this.set(name, null, -1);
     }
 };
 
-exports.default = Cookie;
+export default Cookie;
