@@ -6,8 +6,8 @@ A common function package.
 
 <!-- vim-markdown-toc GFM -->
 
-* [Array](#array)
-  * [Array-Clone](#array-clone)
+* [Array 数组操作方法](#array)
+  * [深度克隆 clone](#array-clone)
   * [求最大值 max](#array-max)
   * [求最小值 min](#array-min)
   * [数组求和 sum](#array-sum)
@@ -57,6 +57,27 @@ A common function package.
 ```
  let arr = [{ name: "north", age: 2 }, { age: 4 }, { age: 3 }];
  Min(arr)(r=>r.age);
+```
+| 参数 | 类型 | 说明 |
+|----------|----------|----------|
+|  arr  |  Array  | 第一层函数参数，传入待计算数组 |
+| name/lambda/空缺  | String/Lambda/空  | 第二层函数参数，可传入待计算属性名/lambda表达式/数值型数组可以空缺 |
+
+### Array Sum
+函数式调用方式一
+```
+ let arr = [1,2,3,4];
+ Sum(arr)();
+```
+函数式调用方式二
+```
+ let arr = [{ name: "north", age: 2 }, { age: 4 }, { age: 3 }];
+ Sum(arr)("age");
+```
+函数式调用方式三
+```
+ let arr = [{ name: "north", age: 2 }, { age: 4 }, { age: 3 }];
+ Sum(arr)(r=>r.age);
 ```
 | 参数 | 类型 | 说明 |
 |----------|----------|----------|
