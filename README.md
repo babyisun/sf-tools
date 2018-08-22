@@ -17,17 +17,17 @@ From NPM for programmatic use:
 <!-- vim-markdown-toc GFM -->
 
 * [Array 数组操作方法](#array)
-  * [深度克隆 clone](#array-clone)
   * [求最大值/最小值/求和 max/min/sum](#array-maxminsum)
 * [cookie操作](#cookie)
 * [storage操作](#storage)
+* [深度克隆操作](#clone)
 
 <!-- vim-markdown-toc -->
 
-## Array
+## Clone
+可传入各类参数，若为数组/对象时返回一个与该参数数据内容的新数组/对象；若为其他类型参数则返回原参数。
 
-### Array Clone
-待补充
+## Array
 
 ### Array Max/Min/Sum
 
