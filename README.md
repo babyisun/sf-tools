@@ -2,13 +2,23 @@ sf-tools 常用函数库
 ============================
 A common function package.
 
+Install
+-------
+
+First make sure you have installed the latest version of [node.js](http://nodejs.org/)
+(You may need to restart your computer after this step).
+
+From NPM for programmatic use:
+
+    npm install uglify-js
+
 #### 文档
 
 <!-- vim-markdown-toc GFM -->
 
 * [Array 数组操作方法](#array)
   * [深度克隆 clone](#array-clone)
-  * [求最大值/最小值/求和 max/min/sum](#array-max/min/sum)
+  * [求最大值/最小值/求和 max/min/sum](#array-max-min-sum)
 * [cookie操作](#cookie)
 * [storage操作](#storage)
 
