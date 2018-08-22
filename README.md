@@ -6,8 +6,8 @@ A common function package.
 
 <!-- vim-markdown-toc GFM -->
 
-* [数组方法](#Array)
-  * [深度克隆 clone](#Array-Clone)
+* [Array](#Array)
+  * [Array-Clone](#Array-Clone)
   * [求最大值 max](#Array-Max)
   * [求最小值 min](#Array-Min)
   * [数组求和 sum](#Array-Sum)
