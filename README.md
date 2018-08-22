@@ -18,7 +18,7 @@ From NPM for programmatic use:
 
 * [Array 数组操作方法](#array)
   * [深度克隆 clone](#array-clone)
-  * [求最大值/最小值/求和 max/min/sum](#array-max-min-sum)
+  * [求最大值/最小值/求和 max/min/sum](#array-maxminsum)
 * [cookie操作](#cookie)
 * [storage操作](#storage)
 
