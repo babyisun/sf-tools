@@ -5,12 +5,11 @@ A common function package.
 Install
 -------
 
-First make sure you have installed the latest version of [node.js](http://nodejs.org/)
-(You may need to restart your computer after this step).
+请确保你已经安装了node.js[node.js](http://nodejs.org/)
 
-From NPM for programmatic use:
+然后执行包安装命令:
 
-    npm install uglify-js
+    npm install sf-tools
 
 #### 文档
 
