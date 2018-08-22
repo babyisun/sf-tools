@@ -10,3 +10,9 @@ it('数组对象按照age取最大的子对象', () => {
     let result = Max(arr)("age");
     expect(result).toBe(arr[0]);
 });
+
+it('数组对象按照age取最大的子对象', () => {
+    let arr = [{ name: "north", age: 22 }, { age: 4 }, { age: 3 }];
+    let result = Max(arr)(r=>r.age);
+    expect(result).toBe(arr[0]);
+});
