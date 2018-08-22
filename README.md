@@ -6,13 +6,13 @@ A common function package.
 
 <!-- vim-markdown-toc GFM -->
 
-* [Array](#Array)
-  * [Array-Clone](#Array-Clone)
-  * [求最大值 max](#Array-Max)
-  * [求最小值 min](#Array-Min)
-  * [数组求和 sum](#Array-Sum)
-* [cookie操作](#emoji-指南)
-* [storage操作](#如何在命令行中显示-emoji)
+* [Array](#array)
+  * [Array-Clone](#array-clone)
+  * [求最大值 max](#array-max)
+  * [求最小值 min](#array-min)
+  * [数组求和 sum](#array-sum)
+* [cookie操作](#cookie)
+* [storage操作](#storage)
 
 <!-- vim-markdown-toc -->
 
