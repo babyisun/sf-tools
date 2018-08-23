@@ -19,21 +19,26 @@ const Clone = obj => {
     const cloneArr = (arr) => {
         let clonearr = [],
         len = arr.length;
+        let value = null;
+        let type = null;
         for (let i = 0; i < len; i++) {
-            let value = arr[i];
-            if (judgeType(value) === 'array') clonearr.push(cloneArr(value));
-            if (judgeType(value) === 'obj') clonearr.push(cloneObj(value));
-            if (judgeType(value) === 'other') clonearr.push(value);
+            value = arr[i];
+            type = judgeType(value);
+            if (type === 'array') clonearr.push(cloneArr(value));
+            if (type === 'obj') clonearr.push(cloneObj(value));
+            if (type === 'other') clonearr.push(value);
         }
         return clonearr;
     };
     const cloneObj = (obj) => {
         let clonedObj = {...obj};
         let value = null;
+        let type = null;
         for (let i in clonedObj) {
             value = clonedObj[i];
-            if (judgeType(value) === 'array') clonedObj[i] = cloneArr(value);
-            if (judgeType(value) === 'obj') clonedObj[i] = cloneObj(value);
+            type = judgeType(value);
+            if (type === 'array') clonedObj[i] = cloneArr(value);
+            if (type === 'obj') clonedObj[i] = cloneObj(value);
         }
         return clonedObj;
     }
