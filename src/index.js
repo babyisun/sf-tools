@@ -7,6 +7,8 @@ export {default as Max} from './Array/max';
 export {default as Min} from './Array/min';
 export {default as Sum} from './Array/sum';
 export {default as Clone} from './clone';
+export {default as Debounce} from './Function/debounce';
+export {default as Throttle} from './Function/throttle';
 /* export default {
     Cookie: Cookie,
     GetUrlArgs: GetUrlArgs,
