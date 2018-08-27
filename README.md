@@ -34,7 +34,7 @@ Install
 |----------|----------|----------|
 |  fn  |  Function  | 传入目标函数|
 |  delay  |  number  | 传入响应时间, default: 300 |
-eg:
+eg.:
 ```
   let debounceFn = debounce(fn, 500); 
   document.createElement('input').addEventListener('change', debounceFn);
@@ -46,7 +46,7 @@ eg:
 |----------|----------|----------|
 |  fn  |  Function  | 传入目标函数|
 |  threshhold  |  number  | 传入节流时间, default: 160 |
-eg:
+eg.:
 ```
   let throttleFn = throttle(fn, 1000); 
   window.addEventListener('scroll', debounceFn);
@@ -81,27 +81,4 @@ eg:
  Max(arr)(r=>r.age);
  Min(arr)(r=>r.age);
  Sum(arr)(r=>r.age);
-```
-
-## getDeepValue
-
- | 参数 | 类型 | 说明 |
-|----------|----------|----------|
-|  target  |  Object/Array  | 传入目标对象|
-
-eg:
-```
-  let target = {
-   data:[1],
-   ary: [],
-   b: {
-     c:1,
-     d: {
-       e: {
-         f:{2}
-       }
-     }
-   }
-  }
-  getDeepValue(target) // { data:[1], f: 2}
 ```
