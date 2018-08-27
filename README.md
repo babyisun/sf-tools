@@ -32,15 +32,25 @@ Install
 
   | 参数 | 类型 | 说明 |
 |----------|----------|----------|
-|  fn  |  Function  | 第一层函数参数 1，传入目标函数|
-|  delay  |  number  | 第一层函数参数 2，传入响应时间|
+|  fn  |  Function  | 传入目标函数|
+|  delay  |  number  | 传入响应时间, default: 300 |
+eg.:
+```
+  let debounceFn = debounce(fn, 500); 
+  document.createElement('input').addEventListener('change', debounceFn);
+```
 
 ### throttle
 
   | 参数 | 类型 | 说明 |
 |----------|----------|----------|
-|  fn  |  Function  | 第一层函数参数 1，传入目标函数|
-|  threshhold  |  number  | 第一层函数参数 2，传入节流时间|
+|  fn  |  Function  | 传入目标函数|
+|  threshhold  |  number  | 传入节流时间, default: 160 |
+eg.:
+```
+  let throttleFn = throttle(fn, 1000); 
+  window.addEventListener('scroll', debounceFn);
+```
 
 ## Array
 
