@@ -5,7 +5,7 @@ A common function package.
 Install
 -------
 
-请确保你已经安装了node.js[node.js](http://nodejs.org/)
+请确保你已经安装了[node.js](http://nodejs.org/)
 
 然后执行包安装命令:
 
