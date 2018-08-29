@@ -17,6 +17,9 @@ Install
 
 * [Array 数组操作方法](#array)
   * [求最大值/最小值/求和 max/min/sum](#array-maxminsum)
+* [Function 操作方法](#function)
+  * [防抖函数](#function-debounce)
+  * [节流函数](#function-throttle)
 * [cookie操作](#cookie)
 * [storage操作](#storage)
 * [深度克隆操作](#clone)
@@ -28,7 +31,7 @@ Install
 
 ## Function
 
-### debounce
+### Function debounce
 
   | 参数 | 类型 | 说明 |
 |----------|----------|----------|
@@ -40,7 +43,7 @@ eg.:
   document.createElement('input').addEventListener('change', debounceFn);
 ```
 
-### throttle
+### Function throttle
 
   | 参数 | 类型 | 说明 |
 |----------|----------|----------|
