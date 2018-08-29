@@ -5,7 +5,7 @@ A common function package.
 Install
 -------
 
-请确保你已经安装了node.js[node.js](http://nodejs.org/)
+请确保你已经安装了[node.js](http://nodejs.org/)
 
 然后执行包安装命令:
 
@@ -37,8 +37,8 @@ Install
 |----------|----------|----------|
 |  fn  |  Function  | 传入目标函数|
 |  delay  |  number  | 传入响应时间, default: 300 |
+
 ```
-eg.:
   let debounceFn = debounce(fn, 500); 
   document.createElement('input').addEventListener('change', debounceFn);
 ```
@@ -51,7 +51,6 @@ eg.:
 |  threshhold  |  number  | 传入节流时间, default: 160 |
 
 ```
-eg.:
   let throttleFn = throttle(fn, 1000); 
   window.addEventListener('scroll', throttleFn);
 ```
@@ -59,6 +58,7 @@ eg.:
 ## Array
 
 ### Array Max/Min/Sum
+求数组的最大值/最小值/求和
 
 | 参数 | 类型 | 说明 |
 |----------|----------|----------|
