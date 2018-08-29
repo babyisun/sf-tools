@@ -29,18 +29,20 @@ Install
 ## Function
 
 ### debounce
+防抖函数，适用于如input响应onChange事件触发接口请求，要考虑延迟触发
 
   | 参数 | 类型 | 说明 |
 |----------|----------|----------|
 |  fn  |  Function  | 传入目标函数|
 |  delay  |  number  | 传入响应时间, default: 300 |
+
 ```
-eg.:
   let debounceFn = debounce(fn, 500); 
   document.createElement('input').addEventListener('change', debounceFn);
 ```
 
 ### throttle
+节流函数，适用于mousemove、鼠标滚轮等频繁触发事件的减小触发频率
 
   | 参数 | 类型 | 说明 |
 |----------|----------|----------|
@@ -48,7 +50,6 @@ eg.:
 |  threshhold  |  number  | 传入节流时间, default: 160 |
 
 ```
-eg.:
   let throttleFn = throttle(fn, 1000); 
   window.addEventListener('scroll', throttleFn);
 ```
@@ -56,6 +57,7 @@ eg.:
 ## Array
 
 ### Array Max/Min/Sum
+求数组的最大值/最小值/求和
 
 | 参数 | 类型 | 说明 |
 |----------|----------|----------|
