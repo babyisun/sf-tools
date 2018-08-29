@@ -50,7 +50,7 @@ eg.:
 ```
 eg.:
   let throttleFn = throttle(fn, 1000); 
-  window.addEventListener('scroll', debounceFn);
+  window.addEventListener('scroll', throttleFn);
 ```
 
 ## Array
