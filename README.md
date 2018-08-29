@@ -32,7 +32,7 @@ Install
 ## Function
 
 ### Function debounce
-防抖函数，适用于如input响应onChange事件出发接口请求，要考虑延迟触发
+防抖函数，适用于如input响应onChange事件触发接口请求，要考虑延迟触发
 
   | 参数 | 类型 | 说明 |
 |----------|----------|----------|
