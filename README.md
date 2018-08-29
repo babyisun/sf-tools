@@ -17,6 +17,9 @@ Install
 
 * [Array 数组操作方法](#array)
   * [求最大值/最小值/求和 max/min/sum](#array-maxminsum)
+* [Function 操作方法](#function)
+  * [防抖函数](#function-debounce)
+  * [节流函数](#function-throttle)
 * [cookie操作](#cookie)
 * [storage操作](#storage)
 * [深度克隆操作](#clone)
@@ -28,8 +31,7 @@ Install
 
 ## Function
 
-### debounce
-防抖函数，适用于如input响应onChange事件触发接口请求，要考虑延迟触发
+### Function debounce
 
   | 参数 | 类型 | 说明 |
 |----------|----------|----------|
@@ -41,8 +43,7 @@ Install
   document.createElement('input').addEventListener('change', debounceFn);
 ```
 
-### throttle
-节流函数，适用于mousemove、鼠标滚轮等频繁触发事件的减小触发频率
+### Function throttle
 
   | 参数 | 类型 | 说明 |
 |----------|----------|----------|
